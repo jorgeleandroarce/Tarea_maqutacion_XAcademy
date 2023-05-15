@@ -11,10 +11,15 @@
         }
         p {
             margin-right: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500px;
+            font-size: 13px;
         }
         h1 {
             margin: 0px 400px;
             text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 27px;
         }
         button.redondo {
             background-color: white;
@@ -26,13 +31,22 @@
         div#introduction-actions {
             display: flex;
             justify-content: center;
+            align-items: center;
+                }
+        .iconitos {
+            display: flex;
+            height: 10px;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+
         }
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 20px 260px 20px 260px; justify-content: space-between;">
         <div id="header-left">
-            <img src="logo.svg">
+            <img src="Imagenes/logo.svg">
         </div>
         <div id="header-right" style="display: flex; align-items: center;">
             <p>Nosotros</p>
@@ -41,15 +55,21 @@
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
+            <div class="iconitos">
+                <img src="Imagenes/instagram.png" alt="icono_instagram">
+                <div>
+                    <img src="Imagenes/Linkedin.png" alt="icono_linkedIn">
+                </div>
+            </div>
         </div>
     </div>
     <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
+        <div id="introduction-text" style="padding:40px 150px";>
             <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+        <div id="introduction-actions">
+            <button class="redondo" style="border: 2px solid black; font-size: 15px";>Contactanos -></button>
+            <button class="redondo" style="margin-left: 14px; color: blueviolet; border: 2px solid blueviolet; font-size: 15px">Sumate +</button>
         </div>
     </div>
 </body>
